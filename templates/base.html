@@ -1,0 +1,36 @@
+{% load static %}
+{% load render_partial %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "includes/head_link.html" %}
+</head>
+
+<body>
+<!-- Topbar Start -->
+{% include "includes/top_bar.html" %}
+<!-- Topbar End -->
+<!-- Navbar Start -->
+{% render_partial 'product:navbar' %}
+<!-- Navbar End -->
+
+
+
+
+{% block main %}
+
+{% endblock %}
+
+<!-- Footer Start -->
+{% include "includes/footer.html" %}
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+{% include "includes/foot_link.html" %}
+</body>
+
+</html>
